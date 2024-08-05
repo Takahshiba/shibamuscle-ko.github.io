@@ -605,16 +605,16 @@ nav {
     .menu a,
     .right-menu a {
         margin: 0 4px;
-        font-size: 0.6em;
+        font-size: 0.55em;
     }
 
     .right-menu button {
         padding: 4px 8px;
-        font-size: 0.6em;
+        font-size: 0.55em;
     }
 
     .header-text {
-        font-size: 0.6em;
+        font-size: 0.55em;
     }
 
     .sub-nav {
@@ -623,7 +623,7 @@ nav {
     }
 
     .sub-nav a {
-        font-size: 10px;
+        font-size: 9px;
         padding: 5px;
     }
 
