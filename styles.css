@@ -26,6 +26,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .header-logo {
@@ -59,6 +60,12 @@ nav {
     border-radius: 20px;
 }
 
+.right-menu {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
 .right-menu button {
     padding: 6px 12px;
     border: none;
@@ -85,8 +92,10 @@ nav {
 }
 
 .language-menu {
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .language-btn {
@@ -142,6 +151,7 @@ nav {
     height: auto;
     margin-right: 8px;
 }
+
 
 .sub-nav {
     background-color: #282A35;
