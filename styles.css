@@ -63,7 +63,6 @@ nav {
 .right-menu {
     display: flex;
     align-items: center;
-    flex-grow: 1;
 }
 
 .right-menu button {
@@ -79,6 +78,7 @@ nav {
     text-decoration: none;
     transition: color 0.3s, transform 0.3s;
     font-size: 0.8em;
+    margin-right: 8px;
 }
 
 .header-text:hover {
@@ -89,13 +89,16 @@ nav {
 .separator {
     color: rgba(45, 41, 41, 0.5);
     font-weight: lighter;
+    margin-right: 8px;
 }
 
 .language-menu {
     position: absolute;
-    right: 16px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
+    display: flex;
+    align-items: center;
 }
 
 .language-btn {
