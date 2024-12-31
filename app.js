@@ -1,27 +1,3 @@
-// Language in header Section here
-
-document.addEventListener('DOMContentLoaded', function() {
-    const languageBtn = document.querySelector('.language-btn');
-    const languageDropdown = document.querySelector('.language-dropdown');
-    
-    languageBtn.addEventListener('click', function(e) {
-        e.stopPropagation();
-        languageDropdown.style.display = languageDropdown.style.display === 'block' ? 'none' : 'block';
-    });
-
-    document.addEventListener('click', function() {
-        languageDropdown.style.display = 'none';
-    });
-
-    languageDropdown.addEventListener('click', function(e) {
-        if (e.target.tagName === 'A') {
-            const selectedLang = e.target.getAttribute('data-lang');
-            languageBtn.textContent = e.target.textContent + ' ▼';
-            console.log('Selected language:', selectedLang);
-        }
-    });
-});
-
 // table by gender and age and bodyweight toggles here
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -71,6 +47,8 @@ function toggleMenu() {
 }
 
 // search exercise card here
+document.getElementById('search-bar').addEventListener('input', filterExercises);
+
 function filterExercises() {
     const input = document.getElementById('search-bar').value.toLowerCase();
     const cards = document.getElementsByClassName('exercise-card');
